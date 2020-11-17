@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { getAllGames, getGame} from '../fake-api';
+import { getAllGames } from '../fake-api';
 import { formatRating } from '@bg-hoard/store/util-formatters';
-
 
 @Component({
   selector: 'bg-hoard-root',

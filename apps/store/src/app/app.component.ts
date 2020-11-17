@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { getAllGames, getGame} from '../fake-api';
+import { formatRating } from '@bg-hoard/store/util-formatters';
+
 
 @Component({
   selector: 'bg-hoard-root',
@@ -13,6 +15,8 @@ export class AppComponent implements OnInit {
   public game;
 
   ngOnInit() {
-    this.games = getAllGames();
+    this.games = getAllGames().map((game) => {
+      return {...game, rating: formatRating(game.rating)};
+    });
   }
 }

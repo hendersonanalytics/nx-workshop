@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { formatRating } from '@bg-hoard/store/util-formatters';
 import { map } from 'rxjs/operators';
+import { Game } from '@bg-hoard/util-interface';
 
 @Component({
   selector: 'bg-hoard-root',
@@ -16,8 +17,8 @@ export class AppComponent implements OnInit {
   public game;
 
   ngOnInit() {
-    this.games$ = this.http.get('/api/games').pipe(
-      map((games: any[]) => {
+    this.games$ = this.http.get<Game[]>('/api/games').pipe(
+      map((games: Game[]) => {
         return games.map(game => {
           return {...game, rating: formatRating(game.rating)}
         });

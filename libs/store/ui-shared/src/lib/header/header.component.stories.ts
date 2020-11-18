@@ -1,7 +1,7 @@
 import { MatToolbarModule } from '@angular/material/toolbar';
 import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-import { text, number, boolean } from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs';
 import { HeaderComponent } from './header.component';
 
 export default {

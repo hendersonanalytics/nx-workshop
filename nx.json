@@ -12,46 +12,79 @@
   },
   "projects": {
     "api": {
-      "tags": ["type:app", "scope:api"]
+      "tags": [
+        "type:app",
+        "scope:api"
+      ]
     },
     "api-util-notifications": {
-      "tags": ["type:util", "scope:api"]
+      "tags": [
+        "type:util",
+        "scope:api"
+      ]
     },
     "store": {
-      "tags": ["scope:store", "type:app"]
+      "tags": [
+        "scope:store",
+        "type:app"
+      ]
     },
     "store-e2e": {
-      "tags": ["type:e2e", "scope:store"],
-      "implicitDependencies": ["store"]
+      "tags": [
+        "type:e2e",
+        "scope:store"
+      ],
+      "implicitDependencies": [
+        "store"
+      ]
     },
     "store-feature-game-detail": {
-      "tags": ["type:feature", "scope:store"]
+      "tags": [
+        "type:feature",
+        "scope:store"
+      ]
     },
     "store-ui-shared": {
-      "tags": ["type:ui", "scope:shared"]
+      "tags": [
+        "type:ui",
+        "scope:shared"
+      ]
     },
     "store-ui-shared-e2e": {
-      "tags": ["scope:store", "type:e2e"],
-      "implicitDependencies": ["store-ui-shared"]
+      "tags": [
+        "scope:store",
+        "type:e2e"
+      ],
+      "implicitDependencies": [
+        "store-ui-shared"
+      ]
     },
     "store-util-formatters": {
-      "tags": ["type:util", "scope:store"]
+      "tags": [
+        "type:util",
+        "scope:store"
+      ]
     },
     "util-interface": {
-      "tags": ["type:util", "scope:shared"]
+      "tags": [
+        "type:util",
+        "scope:shared"
+      ]
     }
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
+        "accessToken": "Yzc3ODJlYjMtY2ZkOC00MjI1LWE3OTEtNzA4MTQzZjljNzQxfHJlYWQtd3JpdGU=",
         "cacheableOperations": [
           "build",
-          "lint",
           "test",
-          "e2e",
-          "build-storybook"
-        ]
+          "lint",
+          "e2e"
+        ],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },

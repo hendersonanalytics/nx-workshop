@@ -1,5 +1,7 @@
 import { Injectable } from '@nestjs/common';
 
+import {sendNotification} from '@bg-hoard/api/util-notifications';
+
 const games = [
   {
     id: 'settlers-in-the-can',

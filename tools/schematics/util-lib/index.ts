@@ -6,7 +6,7 @@ export default function (schema: any): Rule {
       name: `util-${schema.name}`,
       linter: 'tslint',
       directory: schema.directory,
-      tags: ['type:util', `scope:${schema.directory}`]
+      tags: `type:util,scope:${schema.directory}`
     }),
   ]);
 }

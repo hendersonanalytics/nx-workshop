@@ -8,5 +8,6 @@ module.exports = {
     '<rootDir>/apps/api',
     '<rootDir>/libs/libs/api/util-interface',
     '<rootDir>/libs/api/util-interface',
+    '<rootDir>/libs/api/util-notifications',
   ],
 };

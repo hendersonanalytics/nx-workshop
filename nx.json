@@ -16,9 +16,7 @@
     },
     "store-e2e": {
       "tags": ["type:e2e", "scope:store"],
-      "implicitDependencies": [
-        "store"
-      ]
+      "implicitDependencies": ["store"]
     },
     "store-ui-shared": {
       "tags": ["type:ui", "scope:shared"]
@@ -27,7 +25,7 @@
       "tags": ["type:util", "scope:store"]
     },
     "store-feature-game-detail": {
-      "tags": ["type:feature", "scope:store" ]
+      "tags": ["type:feature", "scope:store"]
     },
     "api": {
       "tags": ["type:app", "scope:api"]
@@ -37,9 +35,10 @@
     },
     "store-ui-shared-e2e": {
       "tags": ["scope:store", "type:e2e"],
-      "implicitDependencies": [
-        "store-ui-shared"
-      ]
+      "implicitDependencies": ["store-ui-shared"]
+    },
+    "api-util-notifications": {
+      "tags": ["type:util", "scope:api"]
     }
   },
   "tasksRunnerOptions": {

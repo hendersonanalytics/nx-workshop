@@ -1,7 +1,7 @@
 name: Run CI checks
 on: [pull_request]
 jobs:
-  test: tough-job
+  test:
     runs-on: ubuntu-latest
     name: Testing affected apps
     steps:

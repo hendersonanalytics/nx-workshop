@@ -7,4 +7,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: bahmutov/npm-install@v1.4.5
-      - run: npm run nx affected:test
+      - run: npm run nx affected:test --base=origin/master

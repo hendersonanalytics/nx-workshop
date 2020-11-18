@@ -1,13 +1,11 @@
-name: Run CI checks # <-- The name will show up on the GitHub Actions dashboard
-
-on: [pull_request] # <-- This workflow will run only on Pull Requests
-
+name: Run CI checks
+on: [pull_request]
 jobs:
-  test: tough-job # <-- give our job an ID
-    runs-on: ubuntu-latest # <-- the image our job will run on
-    name: Testing affected apps # <-- the name that will appear on the Actions UI
-    steps: # <-- what steps it will perform
-      - uses: actions/checkout@v1 # <-- checkout whatever branch the PR is using
-      - uses: bahmutov/npm-install@v1.4.5 # <-- trigger an `npm install`
-      - run: npm run nx test store # <-- test the "store" project
-      - run: npm run nx test api # <-- test the "api" project
+  test: tough-job
+    runs-on: ubuntu-latest
+    name: Testing affected apps
+    steps:
+      - uses: actions/checkout@v1
+      - uses: bahmutov/npm-install@v1.4.5
+      - run: npm run nx test store
+      - run: npm run nx test api

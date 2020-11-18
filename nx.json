@@ -12,31 +12,31 @@
   },
   "projects": {
     "store": {
-      "tags": []
+      "tags": ["scope:store", "type:app"]
     },
     "store-e2e": {
-      "tags": [],
+      "tags": ["type:e2e", "scope:store"],
       "implicitDependencies": [
         "store"
       ]
     },
     "store-ui-shared": {
-      "tags": []
+      "tags": ["type:ui", "scope:shared"]
     },
     "store-util-formatters": {
-      "tags": []
+      "tags": ["type:util", "scope:store"]
     },
     "store-feature-game-detail": {
-      "tags": []
+      "tags": ["type:feature", "scope:store" ]
     },
     "api": {
-      "tags": []
+      "tags": ["type:app", "scope:api"]
     },
     "util-interface": {
-      "tags": []
+      "tags": ["type:util", "scope:shared"]
     },
     "store-ui-shared-e2e": {
-      "tags": [],
+      "tags": ["scope:store", "type:e2e"],
       "implicitDependencies": [
         "store-ui-shared"
       ]

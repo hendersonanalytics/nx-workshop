@@ -60,8 +60,20 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
-            "onlyDependOnLibsWithTags": ["*"]
+            "sourceTag": "scope:store",
+            "onlyDependOnLibsWithTags": ["scope:store", "scope:shared"]
+          },
+          {
+            "sourceTag": "scope:shared",
+            "onlyDependOnLibsWithTags": ["scope:shared"]
+          },
+          {
+            "sourceTag": "scope:api",
+            "onlyDependOnLibsWithTags": ["scope:api", "scope:shared"]
+          },
+          {
+            "sourceTag": "lib:ui",
+            "onlyDependOnLibsWithTags": ["lib:ui"]
           }
         ]
       }
